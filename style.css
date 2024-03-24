@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     color: #323232;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 input, label{
@@ -109,9 +111,14 @@ input[type="submit"]:hover{
     margin-right: 5px;
 }
 
+#agreement-box{
+    display: flex;
+}
+
 #agreement, #agreement-label{
     display: inline-block;
     width: auto;
+    height: auto;
 }
 
 .error-validation{
@@ -123,4 +130,55 @@ input[type="submit"]:hover{
 
 .template {
     display: none;
+}
+
+@media (max-width: 655px){
+    #main-container{
+        width: 90vw;
+        margin: auto;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        background: rgba(67, 24, 56, 0.63);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+        border: 1px solid rgba(233, 233, 233, 0.04);
+        border-radius: 10px;
+        padding: 25px;
+}
+}
+
+@media (max-width: 655px){
+    .half-box{
+        flex: 1 1 80%;
+        padding: 0px 0px;
+        margin: 0px;
+        position: relative;
+    }
+
+    input{
+        margin: 10px auto;
+    }
+
+    #agreement-box{
+        display: flex;
+        align-items: center;
+    }
+
+    #agreement, #agreement-label{
+        display: inline-block;
+        width: auto;
+        padding: 0px;
+        margin: 0px 4px;
+    }
+
+    body{
+        padding-top: 5vh;
+        background-image: url(img/Fundo-de-Tela-Estetico-4k-1024x574.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
