@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input, label:focus{
+    outline: none;
+}
+
+a{
+    color: #e60084;
+}
+
+body{
+    padding-top: 5vh;
+    background-image: url(img/Fundo-de-Tela-Estetico-4k-1024x574.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-container{
+    width: 650px;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    background: rgba(67, 24, 56, 0.63);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(233, 233, 233, 0.04);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid #540151;
+    padding: 10px;
+    font-size: .9rem;
+    margin: 0px 0px 40px 0px;
+    border-radius: 3px;
+}
+
+input:focus{
+    border-color: #e60084;
+}
+
+input[type="submit"]{
+    background-color: #e60084;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff0c96;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation{
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
